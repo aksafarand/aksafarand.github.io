@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ '/public/css/lanyon.css' | relative_url }}">
-  {% include head.html %}
-</head>
-<body>
-  <div class="sidebar">
-    {% include sidebar.html %}
-  </div>
-  <div class="content container">
-    {{ content }}
-  </div>
-  {% include footer.html %}
-  <script src="{{ '/public/js/lanyon.js' | relative_url }}"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="{{ '/public/css/lanyon.css' | relative_url }}"
+    />
+    {% include head.html %}
+  </head>
+  <body>
+    <div class="sidebar">{% include sidebar.html %}</div>
+    <div class="content container">{{ content }}</div>
+    {% include footer.html %}
+    <script src="{{ '/public/js/script.js' | relative_url }}"></script>
+  </body>
 </html>
