@@ -3,6 +3,11 @@ layout: default
 title: Home
 ---
 
+## Hello
+
+Welcome to my data engineering portfolio built with Lanyon.
+
+
 # 👋 Hi, I'm Kukuh
 
 I'm a self-taught Data & Backend Engineer with experience building end-to-end data pipelines, automated reporting systems, and custom API integrations.
