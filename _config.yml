@@ -6,7 +6,7 @@ description: >-
 baseurl: "" 
 url: "https://aksafarand.github.io" 
 
-theme: minima  # simple built-in theme
+theme: Lanyon  # simple built-in theme
 
 markdown: kramdown
 plugins:
