@@ -1,0 +1,14 @@
+title: Kukuh's Data Portfolio
+email: your.email@example.com
+description: >- 
+  A self-taught engineer building real-world data pipelines, automation systems, and API-based reporting tools.
+
+baseurl: "" 
+url: "https://aksafarand.github.io" 
+
+theme: minima  # simple built-in theme
+
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
