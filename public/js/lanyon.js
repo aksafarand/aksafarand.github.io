@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded', function() { console.log('Lanyon JS loaded'); });

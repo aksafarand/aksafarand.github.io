@@ -1,36 +1,43 @@
 ---
 layout: default
-title: Home
+title: Projects
 ---
 
-# 🛠 Projects
+# Projects
 
-## 📊 WhatsApp Report Automation {#whatsapp-report}
-
-A system that pulls data from Tableau and Grafana dashboards, converts them into image/PDF, and sends reports via WhatsApp using the WhatsApp Business API. Fully automated with custom scheduling and fallback retries.
-
-**Stack:** Python, Tableau API, Grafana API, WhatsApp Business API, YAML scheduler
+Below are a few highlights of the data engineering and automation work I've done.
 
 ---
 
-## 🧱 Data Pipeline: FTP → Parquet → MinIO → Trino → Singlestore {#data-pipeline}
+## 🔗 WhatsApp Reporting via Tableau/Grafana
 
-A production data lake architecture:
-
-- Ingests CSV/Excel from SFTP via Airflow
-- Converts to Parquet
-- Stores in MinIO (S3-compatible)
-- Trino queries Iceberg tables for analytics
-- Singlestore for real-time dashboards via pipelines
-
-**Stack:** Airflow, Python, MinIO, Trino, Iceberg, Singlestore
+**Stack:** Go, Tableau REST API, Grafana Image Render API, Docker, WhatsApp Gateway  
+**Description:**  
+Built a Go-based backend to:
+- Capture live snapshots from Tableau and Grafana (PNG, PDF)
+- Schedule and send those images via WhatsApp using an API gateway
+- Support on-demand requests and scheduled jobs
 
 ---
 
-## 🔎 Apache Drill for Schema-less Data Preview {#drill-tool}
+## 🏗️ FTP → Parquet → Iceberg → SingleStore
 
-Drill-based tool to explore CSV/Parquet files quickly without predefining schemas. Useful for debugging, data profiling, or checking headers on mounted SFTP and MinIO buckets.
-
-**Stack:** Apache Drill, rclone, Python CLI
+**Stack:** Apache Airflow, MinIO, Trino, Iceberg, SingleStore  
+**Description:**  
+Created a robust ETL pipeline:
+```
+FTP/SFTP → Airflow (convert to Parquet) → MinIO → 
+  ├─> SingleStore via pipeline  
+  └─> Trino (query hourly granularity) → Iceberg Table → SingleStore
+```
 
 ---
+
+## ⚙️ Apache Drill for Ad-Hoc File Inspection
+
+**Stack:** Apache Drill, MinIO, SFTP  
+**Description:**  
+Used Apache Drill as an auxiliary tool to:
+- Explore file structures without schema definition
+- Query CSV/JSON/Parquet directly from SFTP and MinIO
+- Validate file headers before loading
