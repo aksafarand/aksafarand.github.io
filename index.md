@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Kukuh's Portfolio
+title: Home
 ---
 
 # 👋 Hi, I'm Kukuh
