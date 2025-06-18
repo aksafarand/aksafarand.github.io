@@ -3,26 +3,13 @@ layout: default
 title: Home
 ---
 
-## Hello
+# Welcome
 
-Welcome to my data engineering portfolio built with Lanyon.
+This is my personal portfolio where I showcase:
 
+- Data ingestion pipelines (FTP/SFTP → Parquet → MinIO → SingleStore)
+- API automation for WhatsApp reporting using Grafana & Tableau
+- Airflow-scheduled ETL systems
+- Trino + Iceberg query architecture
 
-# 👋 Hi, I'm Kukuh
-
-I'm a self-taught Data & Backend Engineer with experience building end-to-end data pipelines, automated reporting systems, and custom API integrations.
-
-### 🔧 Key Skills
-- Airflow • Singlestore • Trino • Iceberg • MinIO
-- Tableau/Grafana API • Parquet • FTP/SFTP integration
-- Automation with Python & Go
-
-### 🚀 Projects
-
-- [📊 WhatsApp Report Automation](projects.html#whatsapp-report)
-- [🧱 Data Lake Pipeline (Airflow → MinIO → Trino)](projects.html#data-pipeline)
-- [🔎 Data Preview Tool with Apache Drill](projects.html#drill-tool)
-
-> Check out the details on the [Projects](projects.html) page or connect with me on [LinkedIn](https://linkedin.com/in/yourusername).
-
----
+Explore my work and feel free to connect!

@@ -16,6 +16,7 @@ A system that pulls data from Tableau and Grafana dashboards, converts them into
 ## 🧱 Data Pipeline: FTP → Parquet → MinIO → Trino → Singlestore {#data-pipeline}
 
 A production data lake architecture:
+
 - Ingests CSV/Excel from SFTP via Airflow
 - Converts to Parquet
 - Stores in MinIO (S3-compatible)
